@@ -1,0 +1,115 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap');
+
+:root{
+    --Soft-blue: hsl(215, 51%, 70%);
+--Cyan: hsl(178, 100%, 50%);
+
+--Very-dark-blue1 : hsl(217, 54%, 11%);
+--Very-dark-blue2 : hsl(216, 50%, 16%);
+--Very-dark-blue3 : hsl(215, 32%, 27%);
+--White: hsl(0, 0%, 100%);
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: var(--Very-dark-blue1);
+    font-family: "Outfit";
+    display: grid;
+    place-content: center;
+    height: 100vh;
+}
+
+.container{
+    background-color: var(--Very-dark-blue2);
+    max-width: 300px;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+h3{
+    font-weight: 600;
+    color: var(--White);
+    font-size: 20px;
+}
+
+p{
+    font-size: 16px;
+    color: var(--Soft-blue);
+}
+
+.image img{
+    width: 260px;
+    height: 260px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+.des{
+    font-weight: 400;
+    margin: 15px 0;
+}
+
+.details{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+}
+
+.eth, .day{
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.eth p{
+    font-size: 12px;
+    color: var(--Cyan);
+    font-weight: 500;
+    
+} 
+
+.eth img{
+    width: 10px;
+}
+
+.day p{
+    font-size: 12px;
+    font-weight: 500;
+} 
+
+.day img{
+    width: 14px;
+}
+
+hr{
+    border: none;
+    background-color: var(--Very-dark-blue3);
+    height: 1px;
+    margin: 20px 0;
+}
+
+.profile{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.profile img{
+    width: 25px;
+    height: 25px;
+    border: 1px solid var(--White);
+    border-radius: 50%;
+}
+
+.profile p{
+    font-size: 12px;
+}
+
+.profile p span{
+    color: var(--White);
+}
