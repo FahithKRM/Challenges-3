@@ -1,0 +1,148 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lexend+Deca:wght@100..900&display=swap');
+
+:root {
+    --Very-dark-blue: hsl(233, 47%, 7%);
+    --Dark-desaturated-blue: hsl(244, 38%, 16%);
+    --Soft-violet: hsl(277, 64%, 61%);
+
+    --White: hsl(0, 0%, 100%);
+    --Slightly-transparent-white1: hsla(0, 0%, 100%, 0.75);
+    --Slightly-transparent-white2: hsla(0, 0%, 100%, 0.6);
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: var(--Very-dark-blue);
+    display: grid;
+    place-content: center;
+    height: 100vh;
+}
+
+h1{
+    font-weight: 700;
+    color: var(--White);
+    font-family: 'Inter';
+}
+
+
+p{
+    font-family: 'Lexend Deca';
+    color: var(--Slightly-transparent-white1);
+    font-weight: 200;
+    font-size: 14px;
+    line-height: 1.5;
+    letter-spacing: 0.5px;
+}
+
+.container{
+    display: flex;
+    max-width: 900px;
+    height: auto ;
+}
+
+.box{
+    background-color: var(--Dark-desaturated-blue);
+    padding: 50px;
+    border-radius: 5px 0 0 5px;
+    max-width: 450px;
+}
+
+h1 span{
+    color: var(--Soft-violet);
+}
+
+.dec {
+    margin-top: 20px;
+}
+
+.items{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 50px;
+}
+
+.item{
+    display: flex;
+    flex-direction: column;
+}
+
+.item p{
+    text-transform: uppercase;
+    font-size: 12px;
+}
+
+.item p span{
+    color: var(--White);
+    font-weight: 600;
+    font-size: 20px;
+}
+
+.image{
+    width: 900px;
+    height: auto;
+    border-radius: 0 5px 5px 0;
+    filter: grayscale(60%) brightness(0.5) sepia(1) hue-rotate(240deg) saturate(3);
+    background: url('./images/image-header-desktop.jpg') no-repeat;
+    background-size: fit-content;
+}
+
+.attribution{
+    font-size: 8px;
+    text-align: center;
+    color: var(--White);
+    margin: 5px;
+}
+
+@media (max-width : 910px) {
+    .container{
+        max-width: 300px;
+        display: flex;
+        flex-direction: column-reverse;
+        align-items: center;
+        justify-content: center;
+    }
+
+    h1{
+        font-size: 26px;
+    }
+    
+    h1, p{
+        text-align: center;
+    }
+    
+    .box{
+        padding: 20px;
+        border-radius: 0 0 5px 5px;
+        max-width: 300px;
+    }
+    
+    .items{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    
+    .item{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-bottom: 20px;
+    }
+    
+    .image{
+        width: 300px;
+        height: 450px;
+        border-top-left-radius: 5px;
+        border-top-right-radius: 5px;
+        filter: grayscale(60%) brightness(0.5) sepia(1) hue-rotate(240deg) saturate(3);
+        background: url('./images/image-header-mobile.jpg') no-repeat;
+        background-size: fit-content;
+    }
+}
